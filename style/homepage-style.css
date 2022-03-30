@@ -1,0 +1,291 @@
+main {
+    padding-top: 15rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 60px;
+    color: #FF4081;
+}
+
+.banner-text {
+    font-weight: 400;
+    font-size: 27px;
+    color: #555555;
+}
+
+.banner-button {
+    padding: .625rem 1.625rem;
+    font-size: 27px;
+    color: #FF4081;
+    border: 2px solid #FF4081;
+    box-sizing: border-box;
+    border-radius: 62px;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+.courses {
+    display: flex;
+    margin: 0 auto;
+    gap: 100px;
+    width: 80%;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 344px;
+}
+
+.course-image {
+    max-height: 270px;
+}
+
+.course-title {
+    font-weight: 700;
+    font-size: 25px;
+    color: #FF4081;
+    text-align: center;
+}
+
+.course-description {
+    font-weight: 300;
+    font-size: 17px;
+    color: #000000;
+    text-align: center;
+}
+
+.course-button {
+    background: #FF4081;
+    border-radius: 62px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    align-self: center;
+    padding: 0.7rem 2rem;
+}
+
+
+.statements {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 37px;
+    color: #009688;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 100px;
+    column-gap: 100px;
+}
+
+.statements-card {
+    display: flex;
+    gap: 30px;
+}
+
+.statements-icon {
+    width: 104px;
+}
+
+.statements-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.statements-text {
+    font-weight: 300;
+    font-size: 18px;
+    color: #000000;
+}
+
+.statements-name {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 73px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.article-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    max-width: 319px;
+    gap: 12px;
+}
+
+.article-title {
+    font-weight: 700;
+    font-size: 27px;
+    color: #009688;
+}
+
+.article-preview {
+    font-size: 17px;
+}
+
+.more-blog {
+    font-weight: 500;
+    font-size: 25px;
+    color: #FF4081;
+    text-decoration: none;
+    padding: .625rem 3.2rem;
+    border: 2px solid #FF4081;
+    border-radius: 62px;
+    text-align: center;
+    align-self: center;
+}
+
+@media only screen and (max-width: 1920px) {
+    .banner{
+        width: 70%;
+    }
+
+    .courses{
+        width: 70%;
+    }
+
+    .statements{
+        width: 70%;
+    }
+
+    .blog{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .courses {
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 100px;
+        row-gap: 50px;
+        width: 80%;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, auto);
+    }
+
+    .banner{
+        flex-wrap: wrap-reverse;
+        row-gap: 100px;
+    }
+
+    .article-container{
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media only screen and (max-width: 1024px){
+    .banner-img{
+        width: 300px;
+    }
+
+    .banner-title{
+        font-size: 40px;
+    }
+
+    .banner-text{
+        font-size: 20px;
+    }
+
+    .banner-button{
+        font-size: 18px;
+    }
+    
+    .card-container{
+        justify-content: center;
+    }
+
+    .article-container{
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .statements-card{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .statements-content{
+        text-align: center;
+        max-width: 200px;
+    }
+
+    .banner-content{
+        gap: 20px;
+    }
+
+    .banner-img{
+        width: 250px;
+    }
+
+    .banner-title{
+        font-size: 35px;
+    }
+
+    .banner-text{
+        font-size: 20px;
+    }
+
+    .banner-button{
+        font-size: 18px;
+    }
+
+    .more-blog{
+        font-size: 20px;
+        padding: 0.25rem 1.2rem;
+    }
+
+    .banner{
+        row-gap: 30px;
+    }
+
+
+}
