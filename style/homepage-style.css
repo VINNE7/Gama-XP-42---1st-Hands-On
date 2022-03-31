@@ -110,6 +110,7 @@ main {
 .statements-card {
     display: flex;
     gap: 30px;
+    min-width: 505px;
 }
 
 .statements-icon {
@@ -177,7 +178,7 @@ main {
     align-self: center;
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1920px) {
     .banner{
         width: 70%;
     }
@@ -192,6 +193,10 @@ main {
 
     .blog{
         width: 70%;
+    }
+
+    .statements-card{
+        max-width: 505px;
     }
 }
 
@@ -244,6 +249,16 @@ main {
 
     .article-container{
         justify-content: space-evenly;
+    }
+
+    .article{
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .statements-card{
+        min-width: unset;
     }
 }
 

@@ -1,0 +1,172 @@
+.random{
+    height: 500px;
+}
+
+main {
+    padding-top: 10rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.intro-content{
+    width: 85%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.intro-title{
+    font-weight: 700;
+    font-size: 60px;
+    color: #FF4081;
+}
+
+.intro-text{
+    font-weight: 400;
+    font-size: 20px;
+    color: #555555;
+}
+
+.course-container{
+    width: 85%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 25px;
+    column-gap: 50px;
+    border-bottom: 5px solid #C4C4C4;
+    padding-bottom: 70px;
+}
+
+.course-image{
+    width: 100%;
+}
+
+.course-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.course-title{
+    font-size: 35px;
+    font-weight: 700;
+    color: #FF4081;
+}
+
+.course-text{
+    font-size: 18px;
+    width: 51vw;
+}
+
+.course-button{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 16px 8px;
+    background: #419488;
+    border-radius: 62px;
+    align-self: start;
+    padding: 16px 50px;
+    margin-top: 15px;
+}
+
+#last-course{
+    border-bottom: none;
+}
+
+@media only screen and (min-width: 1920px){
+    .intro-content{
+        width: 80%;
+    }
+
+    .course-container{
+        width: 80%;
+    }
+
+    .course-text{
+        font-size: 24px;
+    }
+
+    .course-title{
+        font-size: 45px;
+    }
+
+    .course-button{
+        font-size: 30px;
+    }
+
+    .intro-title{
+        font-size: 65px;
+    }
+
+    .intro-text{
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .intro-title{
+        font-size: 40px;
+    }
+
+    .intro-text{
+        font-size: 16px;
+    }
+
+    main{
+        padding-top: 12rem;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .main-container{
+        gap: 50px;
+    }
+    
+    .course-text{
+        width: unset;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    
+    main{
+        padding-top: 12rem;
+    }
+    
+    .intro-title{
+        font-size: 35px;
+    }
+
+    .intro-text{
+        font-size: 13px;
+    }
+    
+    .course-container{
+        flex-wrap: wrap;
+        row-gap: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .course-button{
+        align-self: center;
+    }
+
+    .course-image{
+        width: 75%;
+    }
+
+    .course-title{
+        font-size: 25px;
+    }
+    
+    .course-text{
+        font-size: 15px
+    }
+    
+}
