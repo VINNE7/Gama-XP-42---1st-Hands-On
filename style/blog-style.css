@@ -1,0 +1,178 @@
+main {
+    padding-top: 151px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.intro{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.intro-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 30vw;
+    padding-top: 60px;
+}
+
+.intro-title{
+    font-weight: 700;
+    font-size: 47px;
+    color: #009688;
+}
+
+.intro-text{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.article-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 120px;
+    row-gap: 100px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.article-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.article-image{
+    width: 100%;
+}
+
+.article-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.article-title{
+    font-weight: 500;
+    font-size: 30px;
+    color: #FF4081;
+}
+
+.article-text{
+    font-weight: 300;
+    font-size: 17px;
+}
+
+@media only screen and (min-width:1920px){
+    .intro-image{
+        width: 500px;
+    }
+
+    .intro-title{
+        font-size: 55px;
+    }
+
+    .intro-text{
+        font-size: 24px;
+    }
+
+    .article-title{
+        font-size: 35px;
+    }
+    
+    .article-text{
+        font-size: 24px;
+    }
+}
+
+
+@media only screen and (max-width:1280px){
+    .intro-image{
+        width: 320px;
+    }
+
+    .intro-title{
+        font-size: 42px;
+    }
+
+    .intro-text{
+        font-size: 18px;
+    }
+
+    .article-title{
+        font-size: 29px;
+    }
+
+}
+
+@media only screen and (max-width:1024px){
+    .intro-content{
+        width: 41vw;
+    }
+
+    .intro-image{
+        width: 300px;
+    }
+
+    .article-title{
+        font-size: 26px;
+    }
+
+    .article-text{
+        font-size: 16px;
+    }
+
+    .article-container{
+        width: 90%;
+    }
+
+}
+
+
+
+@media only screen and (max-width:600px){
+    .intro-content{
+        width: 41vw;
+    }
+
+    .intro-image{
+        width: 280px;
+    }
+
+    .intro-title{
+        font-size: 35px;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+    .intro{
+        flex-wrap: wrap-reverse;
+    }
+
+    .intro-image{
+        width: 350px;
+    }
+
+   .intro-content{
+       width: 71vw;
+   }
+
+   .intro-text{
+       font-size: 20px;
+   }
+
+   .article-container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+    width: 80%;
+    }
+
+}
+
